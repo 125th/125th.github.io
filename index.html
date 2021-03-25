@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <title>125th Assault Corps</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,29 +15,27 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="discordInvite.css"/>
 <link rel="icon" href="images/125th.png">
+</head>
 <body>
-<!-- Update with text, pics same size, fill in page,, after selavi git push commmit -->
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-green w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-	  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOS</a>
-    <a href="#join" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JOIN US!</a>
-	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a class="w3-bar-item  w3-padding-large w3-hide-small w3-center"><img src="images/125th.png" style="width: 4%;"></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTOS</a>
-  <a href="#join" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JOIN US!</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-</div>
-
+  <header>
+    <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+    </div>
+    <nav class="top-nav">
+        <ul class="nav-list">
+            <li>
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">Contact and Recruitment</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:2000px">
 
   <!-- Photo caroucel -->
 <div  id="photos">
@@ -96,12 +99,11 @@
   <!--  Unit Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">THE UNIT</h2>
-    <p class="w3-opacity"><i>We love heroin</i></p>
-    <p class="w3-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">125th Assault Corps was born on 27th of March 2020 by members with over 10 years experience in the ARMA community. We are a StarSim unit that offers our members an enjoyable time. We are an Infantry Corps heavily focused on the hard and fast attack to overwhelm the enemy whether it be through conventional infantry assaults or use of shield tactics, chances are if you want it, we’ve got it!<br>
+      <br>
+      Our operations are on Fridays or Saturdays depending on the week, we operate on a rotational basis to allow our members to attend as many ops as possible, the standard operation time is 7 pm BST.
+    <br> With the launch of this website we wish 125th a happy birthday! First of the many to come!
+  </p>
   </div>
   
   <!--  Contact Section -->
@@ -110,7 +112,6 @@
     <p class="w3-opacity w3-center "><i>Want to reach us?</i></p>
     <div class="w3-row w3-padding-32" id="join">
       <div class="w3-col m6 w3-large w3-margin-center w3-center">
-        <i class="fa fa-map-marker" style="width:30px"></i>Eu/NA<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: 125th.assault.corps@gmail.com<br>
 		    <div id="discordInviteBox"></div><br>
       </div>
@@ -164,5 +165,8 @@ window.onclick = function(event) {
 });
 discordInvite.render();
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
